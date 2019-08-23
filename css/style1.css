@@ -1,0 +1,107 @@
+html {
+    background-color: black;
+    color: white;
+    font-family: Ubuntu, sans-serif;
+}
+
+body {
+    border: none;
+    margin: 100;
+    padding: 100;
+}
+
+header {
+    background-color: white;
+}
+
+
+
+
+
+.topnav {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+        /*text-align: center;
+  float:center;*/
+        /*float:center;*/
+        /*padding: 32px;*/
+    
+    overflow: hidden;
+    width: 100%;
+    /*text-align: center;*/
+    
+}
+
+.topnav div {
+    color: red;
+}
+
+a {
+    color: white;
+}
+
+.topnav a:hover {
+    color: #FFEE58;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a:active {
+    background-color: #673AB7;
+    /*color: white;*/
+}
+
+
+
+.topnav .icon {
+    display: none;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+
+    .topnav div {
+        display: none;
+    }
+
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        display: block;
+        float: right;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .topnav.responsive {
+        justify-content: center;
+        position: relative;
+    }
+
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        display: block;
+        float: none;
+        text-align: left;
+    }
+
+    .topnav.responsive div {
+        display: block;
+        float: none;
+        text-align: left;
+    }
+}
