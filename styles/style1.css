@@ -1,0 +1,43 @@
+html{
+	font-family: ubuntu;
+  background-color: black;
+  color: white;
+}
+body {
+	margin: 100;
+	padding: 100;
+	border: none;
+	}
+
+header{
+  background-color: white;
+}
+
+.topnav {
+  background-color: black;
+  overflow: hidden;
+  color: red;
+}
+
+/*a{
+	color: white;
+}*/
+
+.topnav a{
+	float:center;
+  padding: 32px;
+  color: white;
+  font-size: 17px;
+  width: 20%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: center; /* If you want the text to be centered */
+}
+
+.topnav a:hover {
+  background-color: #000;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #4CAF50;
+  /*color: white;*/
+}
