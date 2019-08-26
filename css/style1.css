@@ -2,6 +2,7 @@ html {
     background-color: black;
     color: white;
     font-family: Ubuntu, sans-serif;
+    box-sizing: border-box;
 }
 
 body {
@@ -41,7 +42,7 @@ header {
     color: red;
 }
 
-a {
+.topnav a {
     color: white;
 }
 
@@ -62,7 +63,10 @@ a {
 }
 
 
-
+a {
+    color: blue;
+    text-decoration: underline;
+}
 
 @media screen and (max-width: 600px) {
 
@@ -104,4 +108,111 @@ a {
         float: none;
         text-align: left;
     }
+}
+
+/*.carousel_slide{
+    background-color: black;
+    width: 800px;
+}*/
+
+div {
+    background-color: black;
+}
+
+.carousel-inner {
+    /*height: 400px;*/
+    margin: 0 auto;
+    /*max-height: 400px;*/
+    max-width: 800px;
+    background-color: black;
+    color: black;
+}
+
+
+
+.btn:focus, .btn:active, button:focus, button:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+#image-gallery .modal-footer{
+  display: block;
+}
+
+.thumb{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1.0);
+  }
+}
+header {
+  animation-duration: 1s;
+  animation-name: bounceIn;
+}
+
+
+@keyframes bounceIn2 {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(3.0);
+    opacity: 1;
+  }
+  80% {
+    transform: scale(0.5);
+  }
+
+  100% {
+    transform: scale(1.0);
+  }
+}
+
+
+nav div {
+  animation-duration: 1s;
+  animation-name: bounceIn2;
+}
+
+
+
+
+@keyframes zoom {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+
+
+  100% {
+    transform: scale(1.0);
+  }
+}
+
+div a img {
+    animation-duration: 1s;
+    animation-name:zoom;
 }
