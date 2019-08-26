@@ -7,8 +7,9 @@ html {
 
 body {
     border: none;
-    margin: 100;
-    padding: 100;
+    margin: 10px;
+    padding: 10px;
+    background-color: black;
 }
 
 header {
@@ -89,6 +90,11 @@ a {
     .topnav.responsive {
         justify-content: center;
         position: relative;
+        flex-direction: column;
+    }
+
+    nav div {
+        display: none;
     }
 
     .topnav.responsive a.icon {
@@ -179,7 +185,7 @@ header {
     opacity: 0;
   }
   60% {
-    transform: scale(3.0);
+    transform: scale(1.5);
     opacity: 1;
   }
   80% {
@@ -215,4 +221,40 @@ nav div {
 div a img {
     animation-duration: 1s;
     animation-name:zoom;
+}
+
+.carouselExampleControls{
+    animation-duration: 1s;
+    animation-name:zoom;
+}
+
+
+section{
+    background-color: black;
+    color: white;
+}
+form {
+    background-color: black;
+    color: white;
+}
+
+
+button {
+    background-color: black;
+    color: #ff1744;
+}
+
+.center_div {
+    text-align: center;
+}
+
+.wrapper{
+    text-align: center;
+}
+
+
+
+aside {
+    float: right;
+    margin: -10 50.5%;
 }
